@@ -18,7 +18,7 @@ suryabot = TelegramClient('bot', apiid, apihash).start(bot_token=bottoken)
 async def _(event): 
     if not event.is_private:
         try:
-            await event.client.send_message(-1311556665, event.message)
+            await event.client.send_message(-1001311556665, event.message)
         except:
             print("TO_CHANNEL ID is wrong or I can't send messages there (make me admin).")
 
