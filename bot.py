@@ -26,8 +26,8 @@ try:
     apiid = config("APP_ID", cast=int)
     apihash = config("API_HASH")
     bottoken = config("BOT_TOKEN")
-    frm = config("FROM_CHANNEL", cast=int)
-    tochnl = config("TO_CHANNEL", cast=int)
+    frm = config("FROM_CHANNEL")
+    tochnl = config("TO_CHANNEL")
     datgbot = TelegramClient('bot', apiid, apihash).start(bot_token=bottoken)
 
 
